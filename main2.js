@@ -184,7 +184,7 @@ rom = new Uint8Array(buff)
 
 const retroarch = await createRetroarch({
   canvas: document.getElementById("canvas"),
-  coreUrl: `http://localhost/demo-retroarch-core-js/data/cores/${getCore(false,core)}_libretro.js`,
+  coreUrl: `https://predadorbr.github.io/retroarch-js/data/cores/${getCore(false,core)}_libretro.js`,
   romBinary: rom,
   beforeLoad: () => {
     console.log("🎬🎬🎬 Starting to load core 🎬🎬🎬")
