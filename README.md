@@ -1,8 +1,10 @@
 # Retroarch.js
 
-[Demo](https://dimitrikarpov.github.io/retroarch-js-demo/)
+Projeito inicial convertido de
+[Demo1](https://predadorbr.github.io/retroarch-js/)
+projeito simplificado de 
+[Demo2](https://predadorbr.github.io/retroarch-js/index2.html)
+Projeto misturado
+[Demo3](https://predadorbr.github.io/retroarch-js/index3.html)
 
-monorepo of two packages:
 
-- core - to start retroarch in browser
-- react - ui wrapper
