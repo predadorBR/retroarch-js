@@ -21,7 +21,7 @@ export class Retroarch {
       this.options.onDestroy?.()
     }
   }
-
+ 
   copyFile(file, path, filename) {
     if (this.module.FS.analyzePath(path).exists === false) {
       this.module.FS.createPath("/", path, true, true)

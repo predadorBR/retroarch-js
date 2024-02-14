@@ -33,7 +33,7 @@ export const fetchCore = async (coreUrl, wasmUrl, optionsUrl) => {
 
   return { coreFactory, wasmBinary, coreOptions }
 }
-
+ 
 export const createRetroarch = async options => {
   if (options.beforeLoad) options.beforeLoad()
 
@@ -58,6 +58,6 @@ export const createRetroarch = async options => {
   })
   retroarch.copyConfig(options.config)
   retroarch.copyOptions(coreOptions.defaultOptions, coreOptions.folder)
-
+  retroarch.start()
   return retroarch
 }
