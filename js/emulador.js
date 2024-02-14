@@ -3427,6 +3427,18 @@ class EmuladorJS {
             if (popup) this.closePopup();
         })();
     }
+    displayMessage(message, time) {
+        if (!this.msgElem) {
+            this.msgElem = this.createElement("div");
+            this.msgElem.classList.add("ejs_message");
+            this.elements.parent.appendChild(this.msgElem);
+        }
+        clearTimeout(this.msgTimeout);
+        this.msgTimeout = setTimeout(() => {
+            this.msgElem.innerText = "";
+        }, (typeof time === "number" && time > 0) ? time : 3000)
+        this.msgElem.innerText = message;
+    }
     constructor(element, config) {
         this.ejs_version = "4.0.11";
         this.ejs_num_version = 401.1;
